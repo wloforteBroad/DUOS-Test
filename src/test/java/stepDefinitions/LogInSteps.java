@@ -32,8 +32,9 @@ public class LogInSteps {
 	}
 
 	@Given("^user navigates to Login Page$")
-	public void user_navigates_to_Login_Page() {
+	public void user_navigates_to_Login_Page() throws InterruptedException {
 		headerPage.clickOn_SignIn();
+		Thread.sleep(2000);
 		homePage.clickOn_SignInGoogle();
 	}
 	
