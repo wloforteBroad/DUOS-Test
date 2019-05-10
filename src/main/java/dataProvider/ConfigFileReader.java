@@ -50,7 +50,7 @@ public class ConfigFileReader {
 	}
 	
 	public String getApplicationUrl() {
-		String url = properties.getProperty("urlLocal");
+		String url = properties.getProperty("urlDev");
 		if(url != null) return url;
 		else throw new RuntimeException("url not specified in the Configuration.properties file.");
 	}
