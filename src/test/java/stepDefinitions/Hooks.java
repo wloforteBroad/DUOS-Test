@@ -21,8 +21,6 @@ public class Hooks {
 	
 	TestContext testContext;
 	WebDriver driver;
-	MySQLDBHelper db = new MySQLDBHelper();
-	MongoDBHelper mongodb = new MongoDBHelper();
 	 
 	public Hooks(TestContext context) {
 		testContext = context;
