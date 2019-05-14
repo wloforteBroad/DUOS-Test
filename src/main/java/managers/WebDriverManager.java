@@ -75,7 +75,7 @@ public class WebDriverManager {
         	System.setProperty(CHROME_DRIVER_PROPERTY, FileReaderManager.getInstance().getConfigReader().getDriverPath());
         	ChromeOptions chromeHeadlessOpts = new ChromeOptions();
         	chromeHeadlessOpts.addArguments("--headless");
-        	chromeHeadlessOpts.addArguments("--whitelisted-ips");
+        	chromeHeadlessOpts.addArguments("--whitelisted-ips=''");
         	chromeHeadlessOpts.addArguments("--no-sandbox");
         	chromeHeadlessOpts.addArguments("--disable-extensions");
         	chromeHeadlessOpts.addArguments("window-size=1920,1080");
